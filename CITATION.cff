@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the KV-PRM paper."
+title: "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling"
+type: software
+authors:
+  - family-names: Kuang
+    given-names: Peng
+  - family-names: Jin
+    given-names: Haibo
+  - family-names: Han
+    given-names: Xiaoyu
+  - family-names: Wang
+    given-names: Yanli
+  - family-names: Yuan
+    given-names: Xiaopeng
+  - family-names: Yu
+    given-names: Ye
+  - family-names: Xu
+    given-names: Kaidi
+  - family-names: Wang
+    given-names: Haohan
+version: 1.0.0
+date-released: 2026-08-17
+license: MIT
+repository-code: "https://github.com/KrumperIsOK/KV_PRM"
+url: "https://arxiv.org/abs/2607.09153"
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2607.09153"
+    description: "KV-PRM paper"
+preferred-citation:
+  type: article
+  title: "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling"
+  authors:
+    - family-names: Kuang
+      given-names: Peng
+    - family-names: Jin
+      given-names: Haibo
+    - family-names: Han
+      given-names: Xiaoyu
+    - family-names: Wang
+      given-names: Yanli
+    - family-names: Yuan
+      given-names: Xiaopeng
+    - family-names: Yu
+      given-names: Ye
+    - family-names: Xu
+      given-names: Kaidi
+    - family-names: Wang
+      given-names: Haohan
+  year: 2026
+  journal: "arXiv preprint arXiv:2607.09153"
+  doi: "10.48550/arXiv.2607.09153"
