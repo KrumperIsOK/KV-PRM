@@ -12,6 +12,9 @@ Kaidi Xu<sup>3</sup> · Haohan Wang<sup>1</sup>
 <sup>2</sup>Imperial College London ·
 <sup>3</sup>City University of Hong Kong
 
+**Accepted at NeurIPS 2026**
+
+[![Project page](https://img.shields.io/badge/Project-Page-0f766e.svg)](https://krumperisok.github.io/KV-PRM/)
 [![Paper](https://img.shields.io/badge/arXiv-2607.09153-b31b1b.svg)](https://arxiv.org/abs/2607.09153)
 [![PDF](https://img.shields.io/badge/Paper-PDF-4b44ce.svg)](https://arxiv.org/pdf/2607.09153)
 [![Python](https://img.shields.io/badge/Python-3.11-3776ab.svg)](https://www.python.org/)
@@ -48,8 +51,8 @@ by up to 5,000×, latency by up to 37×, and per-sequence memory by 34.2×.
 The code targets Linux, Python 3.11, and CUDA-capable NVIDIA GPUs.
 
 ```bash
-git clone https://github.com/KrumperIsOK/KV_PRM.git
-cd KV_PRM
+git clone https://github.com/KrumperIsOK/KV-PRM.git
+cd KV-PRM
 
 python3.11 -m venv .venv
 source .venv/bin/activate
@@ -119,14 +122,40 @@ Dataset artifacts remain subject to their original licenses and terms.
 
 If you find KV-PRM useful in your research, please cite:
 
-```bibtex
-@article{kuang2026kvprm,
-  title   = {{KV-PRM}: Efficient Process Reward Modeling via {KV}-Cache Transfer for Multi-Agent Test-Time Scaling},
-  author  = {Kuang, Peng and Jin, Haibo and Han, Xiaoyu and Wang, Yanli and Yuan, Xiaopeng and Yu, Ye and Xu, Kaidi and Wang, Haohan},
-  journal = {arXiv preprint arXiv:2607.09153},
-  year    = {2026}
-}
+Use the [official arXiv BibTeX export](docs/citation.bib), imported verbatim.
+Its [provenance record](docs/citation-provenance.json) records the source URL,
+retrieval date, and SHA-256 checksum. The paper has been accepted at NeurIPS
+2026; the citation retains the metadata supplied by arXiv until an official
+proceedings export is available. This export replaces the previous unverified
+README and `CITATION.cff` entries.
+
+## Project page
+
+The project page lives in [`docs/`](docs/index.html) and can be served by
+GitHub Pages from this repository. No additional repository, framework, build
+step, or paid hosting is needed for this public repository.
+
+To preview locally:
+
+```bash
+python3 -m http.server 8000 --directory docs
 ```
+
+Open <http://localhost:8000>.
+
+To publish after pushing these files to `main`:
+
+1. Open the repository's [Settings → Pages](https://github.com/KrumperIsOK/KV-PRM/settings/pages).
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select **main** and **/docs**, then click **Save**.
+4. Wait for the Pages deployment to finish. The site will be available at
+   <https://krumperisok.github.io/KV-PRM/>.
+
+Future changes to `docs/` publish automatically when pushed to `main`.
+See [GitHub's publishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+The overview and latency comparison images in `docs/assets/` are copies of
+`assets/kv-prm-overview.png` and `assets/latency_comparison.png`; update both
+locations when replacing either figure.
 
 ## Acknowledgement
 
